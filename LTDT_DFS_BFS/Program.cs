@@ -33,12 +33,12 @@ namespace LTDT_DFS_BFS
             #endregion
 
             #region prim
-            //var g = new prim();
-            //g.read_ma_tran();
-            //int[,] a = g.a;
-            //g.show(a);
-            //g.Prim(g.a, 0);
-            //g.kruscal(a);
+            var g = new prim();
+            g.read_ma_tran();
+            int[,] a = g.a;
+            g.show(a);
+            g.Prim(g.a, 0);
+            g.kruscal(a);
             #endregion
 
             #region bell 
@@ -55,31 +55,31 @@ namespace LTDT_DFS_BFS
             #region euler-hamilton
             //var g = new euler_hamil();
             //g.read_ma_tran();
-            //int[,] a = g.a; 
+            //int[,] a = g.a;
             //g.show();
             //g.euler();
             //g.Hamilton();
             #endregion
 
             #region do_an02
-            var g = new euler_path();
-            g.read_matrix();
-            g.show();
-            int so_dinh_bac_le = g.kiem_tra_duong_di_hay_chu_trinh();
-            if (so_dinh_bac_le > 2)
-            {
-                Console.WriteLine(" ko ton tai ");
-            }
-            else if (so_dinh_bac_le == 2)
-            {
-                Console.WriteLine("duong di euler");
-                g.euler(g.a);
-            }
-            else if (so_dinh_bac_le == 0)
-            {
-                Console.WriteLine("chu trinh euler");
-                g.euler(g.a);
-            }
+            //var g = new euler_path();
+            //g.read_matrix();
+            //g.show();
+            //int so_dinh_bac_le = g.kiem_tra_duong_di_hay_chu_trinh();
+            //if (so_dinh_bac_le > 2)
+            //{
+            //    Console.WriteLine(" ko ton tai ");
+            //}
+            //else if (so_dinh_bac_le == 2)
+            //{
+            //    Console.WriteLine("duong di euler");
+            //    g.euler(g.a);
+            //}
+            //else if (so_dinh_bac_le == 0)
+            //{
+            //    Console.WriteLine("chu trinh euler");
+            //    g.euler(g.a);
+            //}
             #endregion
 
 

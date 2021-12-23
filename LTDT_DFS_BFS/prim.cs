@@ -25,7 +25,9 @@ namespace LTDT_DFS_BFS
         public int[,] a;
         public bool read_ma_tran()
         {
-            var duong_dan = ".\\du_lieu\\prim.txt";
+            //var duong_dan = ".\\du_lieu\\prim.txt";
+            var filefolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            var duong_dan = filefolder+ "\\du_lieu\\prim.txt";
             if (!File.Exists(duong_dan))
             {
                 Console.WriteLine("file ko ton tai ");
