@@ -10,6 +10,8 @@ namespace LTDT_DFS_BFS
     class bellman
     {
         public int n;
+
+        //aaa
         public int[,] a;
         public bool read_ma_tran()
         {
